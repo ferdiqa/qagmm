@@ -1006,7 +1006,7 @@
     </con:testCase>
     <con:properties/>
   </con:testSuite>
-  <con:testSuite id="b97cadd9-9bc2-456c-a876-340db9d8b983" name="API Tests2">
+  <con:testSuite id="b97cadd9-9bc2-456c-a876-340db9d8b983" name="API Tests">
     <con:settings/>
     <con:runType>SEQUENTIAL</con:runType>
     <con:testCase id="6509addc-a070-45f2-aca0-9eea96302921" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ARI API" searchProperties="true">
