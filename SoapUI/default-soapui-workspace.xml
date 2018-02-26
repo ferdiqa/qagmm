@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Projects" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
-  <con:project name="MICE CI_PROD">C:/Users/Ferdi Güllübag/Documents/MICE-CI-PROD-soapui-project.xml</con:project>
-  <con:project name="MICE CI_IUT">C:/Users/Ferdi Güllübag/Documents/Project-1-soapui-project.xml</con:project>
-  <con:collectInfoForSupport>false</con:collectInfoForSupport>
-</con:soapui-workspace>
