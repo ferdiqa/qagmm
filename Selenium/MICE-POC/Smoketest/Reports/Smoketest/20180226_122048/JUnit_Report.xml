@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoketest" time="209" tests="6" failures="2" errors="0">
+   <testsuite name="Smoketest" tests="6" failures="2" errors="0" time="209" timestamp="2018-02-26 12:20:51" hostname="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box" id="Test Suites/Smoketest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048"/>
+         <property name="logFiles" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048\\execution0.log"/>
+         <property name="attachments" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048\\1519644078936.png, C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048\\1519644260050.png"/>
+         <property name="hostName" value="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.3.0.1"/>
+         <property name="browser" value="Firefox 58.0"/>
+         <property name="hostAddress" value="192.168.2.131"/>
+         <property name="sessionId" value="1b607f12-89d1-4b5b-a4d2-d253bd35fac6"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/EWS/Landingpage/Verify all Elements" classname="Test Cases/EWS/Landingpage/Verify all Elements" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:20:51 - [TEST_CASE][PASSED] - Test Cases/EWS/Landingpage/Verify all Elements: Test Cases/EWS/Landingpage/Verify all Elements
+
+2018-02-26 12:20:51 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:20:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:20:59 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:20:59 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:20:59 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ber 2.500 Tagungsrume' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ber 2.500 Tagungsrume' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Jetzt buchen und bis zu 30' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Jetzt buchen und bis zu 30' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_BerlinBremenDresdenDsseldo' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_BerlinBremenDresdenDsseldo' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Sichere Reservierung in 3 Mi' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Sichere Reservierung in 3 Mi' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Persnliche Beratung 49 (0)76' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Persnliche Beratung 49 (0)76' is present
+
+2018-02-26 12:21:04 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Kostenfreie Stornierung' is present
+
+2018-02-26 12:21:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Kostenfreie Stornierung' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/h2_Finden Sie die perfekte Loc' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/h2_Finden Sie die perfekte Loc' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Wir finden die passenden Rum' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/p_Wir finden die passenden Rum' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Berli' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Berli' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Breme' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Breme' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Dresd' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Dresd' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Dssel' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Dssel' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Frank' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Frank' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Hambu' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Hambu' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Leipz' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Leipz' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein KlnKl' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein KlnKl' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Hanno' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Hanno' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Mannh' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Mannh' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Mnche' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Mnche' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Nrnbe' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Nrnbe' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Stutt' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Stutt' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Potsd' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Veranstaltungsortein Potsd' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_Bekannt aus' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_Bekannt aus' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_logos' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_logos' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_logos_1' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/span_logos_1' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Deutsch' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_Deutsch' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ Euro' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ Euro' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Kontakt' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Kontakt' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Fragen  Antworten' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Fragen  Antworten' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_So funktionierts' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_So funktionierts' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_ber uns' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_ber uns' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Hotel eintragen' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Hotel eintragen' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Impressum' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/a_Impressum' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_2018 Meeting.Expedia.de -' is present
+
+2018-02-26 12:21:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_2018 Meeting.Expedia.de -' is present
+
+2018-02-26 12:21:05 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:21:06 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Landingpage/Verify Searchbar" classname="Test Cases/EWS/Landingpage/Verify Searchbar" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element &lt;div class=&quot;select&quot;> is not clickable at point (327.5,533) because another element &lt;li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)"/>
+         <system-out><![CDATA[2018-02-26 12:21:06 - [TEST_CASE][FAILED] - Test Cases/EWS/Landingpage/Verify Searchbar: Test Cases/EWS/Landingpage/Verify Searchbar FAILED because (of) Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)
+
+2018-02-26 12:21:06 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:21:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:21:12 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:12 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:12 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/span_Datum' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/span_Datum' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/span_Zeitraum' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/span_Zeitraum' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/span_Personen' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/span_Personen' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/span_Anzahl Rume' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/span_Anzahl Rume' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is clicked on
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is clicked on
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Berlin' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Berlin' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Bremen' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Bremen' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Dresden' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Dresden' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Dsseldorf' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Dsseldorf' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Frankfurt am Main' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Frankfurt am Main' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Hamburg' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Hamburg' is present
+
+2018-02-26 12:21:17 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Hannover' is present
+
+2018-02-26 12:21:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Hannover' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Kln' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Kln' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Leipzig' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Leipzig' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Mannheim' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Mannheim' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Mnchen' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Mnchen' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Nrnberg' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Nrnberg' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Potsdam' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Potsdam' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Regional-Deutschland' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Regional-Deutschland' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Stuttgart' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Stuttgart' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/Datepicker' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/Datepicker' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/Datepicker' is clicked on
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/Datepicker' is clicked on
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_Bis zu 4 Stunden1 Tag2 Tag' is clicked on
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_Bis zu 4 Stunden1 Tag2 Tag' is clicked on
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_Bis zu 4 Stunden' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_Bis zu 4 Stunden' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_1 Tag' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_1 Tag' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_2 Tage' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_2 Tage' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Searchbar_LP/li_3 Tage' is present
+
+2018-02-26 12:21:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:18 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Searchbar_LP/li_3 Tage' is present
+
+2018-02-26 12:21:18 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)
+
+2018-02-26 12:21:19 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)
+[[ATTACHMENT|C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048\\1519644078936.png]]]]></system-out>
+         <system-err><![CDATA[2018-02-26 12:21:06 - [TEST_CASE][FAILED] - Test Cases/EWS/Landingpage/Verify Searchbar: Test Cases/EWS/Landingpage/Verify Searchbar FAILED because (of) Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Landingpage/Start search from LP" classname="Test Cases/EWS/Landingpage/Start search from LP" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:21:19 - [TEST_CASE][PASSED] - Test Cases/EWS/Landingpage/Start search from LP: Test Cases/EWS/Landingpage/Start search from LP
+
+2018-02-26 12:21:19 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:21:19 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-02-26 12:21:25 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-26 12:21:25 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:25 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:25 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:21:30 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:21:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is clicked on
+
+2018-02-26 12:21:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_Berlin' is clicked on
+
+2018-02-26 12:21:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/li_Frankfurt am Main' is clicked on
+
+2018-02-26 12:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/li_Frankfurt am Main' is clicked on
+
+2018-02-26 12:21:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD' is clicked on
+
+2018-02-26 12:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD' is clicked on
+
+2018-02-26 12:21:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/span_Vor' is clicked on
+
+2018-02-26 12:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/span_Vor' is clicked on
+
+2018-02-26 12:21:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/a_1' is clicked on
+
+2018-02-26 12:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/a_1' is clicked on
+
+2018-02-26 12:21:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/li_2 Tage' is clicked on
+
+2018-02-26 12:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/li_2 Tage' is clicked on
+
+2018-02-26 12:21:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/input_InputEventPersons' is clicked on
+
+2018-02-26 12:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/input_InputEventPersons' is clicked on
+
+2018-02-26 12:21:32 - [TEST_STEP][PASSED] - setText: Text '20' is set on object 'Object Repository/Landingpage/Searchbar_LP/input_InputEventPersons'
+
+2018-02-26 12:21:32 - [MESSAGE][PASSED] - Text '20' is set on object 'Object Repository/Landingpage/Searchbar_LP/input_InputEventPersons'
+
+2018-02-26 12:21:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' is clicked on
+
+2018-02-26 12:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' is clicked on
+
+2018-02-26 12:21:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/li_2 Rume' is clicked on
+
+2018-02-26 12:21:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/li_2 Rume' is clicked on
+
+2018-02-26 12:21:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Searchbar_LP/div_Suchen' is clicked on
+
+2018-02-26 12:21:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Searchbar_LP/div_Suchen' is clicked on
+
+2018-02-26 12:21:35 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_Frankfurt am Main' is present
+
+2018-02-26 12:21:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:35 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_Frankfurt am Main' is present
+
+2018-02-26 12:21:35 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_2 Tage' is present
+
+2018-02-26 12:21:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:35 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_2 Tage' is present
+
+2018-02-26 12:21:35 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_2 Rume' is present
+
+2018-02-26 12:21:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:35 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/div_2 Rume' is present
+
+2018-02-26 12:21:35 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:21:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:21:40 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/result text' is present
+
+2018-02-26 12:21:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:40 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/result text' is present
+
+2018-02-26 12:21:40 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/some hotels' is present
+
+2018-02-26 12:21:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:40 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/some hotels' is present
+
+2018-02-26 12:21:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/backtolp' is clicked on
+
+2018-02-26 12:21:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Landingpage/Page_Suchergebnisse - meetingmarket/backtolp' is clicked on
+
+2018-02-26 12:21:41 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ber 2.500 Tagungsrume' is present
+
+2018-02-26 12:21:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:41 - [MESSAGE][PASSED] - Object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_ber 2.500 Tagungsrume' is present
+
+2018-02-26 12:21:41 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:21:41 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Resultpage/Search Wizard _ perform and validate search" classname="Test Cases/EWS/Resultpage/Search Wizard _ perform and validate search" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:21:41 - [TEST_CASE][PASSED] - Test Cases/EWS/Resultpage/Search Wizard _ perform and validate search: Test Cases/EWS/Resultpage/Search Wizard _ perform and validate search
+
+2018-02-26 12:21:42 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:21:47 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:21:47 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:47 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:21:47 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:21:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:21:52 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/div_hotel_img first active' is present
+
+2018-02-26 12:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:52 - [MESSAGE][PASSED] - Object 'Object Repository/Results/div_hotel_img first active' is present
+
+2018-02-26 12:21:52 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/div_inkl. WIFIWLAN  inkl. Beam' is present
+
+2018-02-26 12:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:52 - [MESSAGE][PASSED] - Object 'Object Repository/Results/div_inkl. WIFIWLAN  inkl. Beam' is present
+
+2018-02-26 12:21:52 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/h6_Hotel Art Nouveau' is present
+
+2018-02-26 12:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:52 - [MESSAGE][PASSED] - Object 'Object Repository/Results/h6_Hotel Art Nouveau' is present
+
+2018-02-26 12:21:52 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/p_ein Raum 25m Flche bis zu 10' is present
+
+2018-02-26 12:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:52 - [MESSAGE][PASSED] - Object 'Object Repository/Results/p_ein Raum 25m Flche bis zu 10' is present
+
+2018-02-26 12:21:52 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/p_Leibnizstrae 59 10629 Berlin' is present
+
+2018-02-26 12:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:53 - [MESSAGE][PASSED] - Object 'Object Repository/Results/p_Leibnizstrae 59 10629 Berlin' is present
+
+2018-02-26 12:21:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_ 17850' is present
+
+2018-02-26 12:21:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:53 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_ 17850' is present
+
+2018-02-26 12:21:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_...' is present
+
+2018-02-26 12:21:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:53 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_...' is present
+
+2018-02-26 12:21:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_Ihr Gesamtpreis' is present
+
+2018-02-26 12:21:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:53 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_Ihr Gesamtpreis' is present
+
+2018-02-26 12:21:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_imm_res' is present
+
+2018-02-26 12:21:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:53 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_imm_res' is present
+
+2018-02-26 12:21:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_Jetzt reservieren spter z' is present
+
+2018-02-26 12:21:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:54 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_Jetzt reservieren spter z' is present
+
+2018-02-26 12:21:54 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Results/span_pro Person  1785' is present
+
+2018-02-26 12:21:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:21:54 - [MESSAGE][PASSED] - Object 'Object Repository/Results/span_pro Person  1785' is present
+
+2018-02-26 12:21:54 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:21:54 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Resultpage/Search Wizard _ verify elements present" classname="Test Cases/EWS/Resultpage/Search Wizard _ verify elements present" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:21:54 - [TEST_CASE][PASSED] - Test Cases/EWS/Resultpage/Search Wizard _ verify elements present: Test Cases/EWS/Resultpage/Search Wizard _ verify elements present
+
+2018-02-26 12:21:54 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:01 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:01 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:01 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:01 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/span_Ich suche' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/span_Ich suche' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/a_Tagungsraum mit bernachtung' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/a_Tagungsraum mit bernachtung' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/a_Tagungsraum ohne bernachtung' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/a_Tagungsraum ohne bernachtung' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/span_Ort und Termin' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/span_Ort und Termin' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_Berlin' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_Berlin' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/input_f-date' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/input_f-date' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_1 Tag' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_1 Tag' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/span_Rume' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/span_Rume' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_1 Raum' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_1 Raum' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/input_members' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/input_members' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_Block' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_Block' is present
+
+2018-02-26 12:22:06 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_1 Tag' is present
+
+2018-02-26 12:22:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_1 Tag' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/a_Ausstattung' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/a_Ausstattung' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_TippKonfigurieren Sie Auss' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_TippKonfigurieren Sie Auss' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/span_Verpflegung' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/span_Verpflegung' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/label_Unbegrenzt Kaffee und Te' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/label_Unbegrenzt Kaffee und Te' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/label_Snack  Imbiss' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/label_Snack  Imbiss' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/label_Mittagessen' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/label_Mittagessen' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/a_Mehr' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/a_Mehr' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/span_Extras' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/span_Extras' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/label_Pausen-  Gruppenraum' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/label_Pausen-  Gruppenraum' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Resultpage/div_Weniger Leistungen' is present
+
+2018-02-26 12:22:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Resultpage/div_Weniger Leistungen' is present
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:22:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Header/Check Elements in Header" classname="Test Cases/EWS/Header/Check Elements in Header" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:22:07 - [TEST_CASE][PASSED] - Test Cases/EWS/Header/Check Elements in Header: Test Cases/EWS/Header/Check Elements in Header
+
+2018-02-26 12:22:07 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:14 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:14 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:14 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:14 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-26 12:22:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-26 12:22:19 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_LogoLink' is present
+
+2018-02-26 12:22:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:19 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_LogoLink' is present
+
+2018-02-26 12:22:19 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/div_Favoriten' is present
+
+2018-02-26 12:22:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:19 - [MESSAGE][PASSED] - Object 'Object Repository/Header/div_Favoriten' is present
+
+2018-02-26 12:22:19 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/div_Navigation' is present
+
+2018-02-26 12:22:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:19 - [MESSAGE][PASSED] - Object 'Object Repository/Header/div_Navigation' is present
+
+2018-02-26 12:22:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Header/div_Favoriten' is clicked on
+
+2018-02-26 12:22:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Header/div_Favoriten' is clicked on
+
+2018-02-26 12:22:20 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/div_In den Ergebnissen einfach' is present
+
+2018-02-26 12:22:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:20 - [MESSAGE][PASSED] - Object 'Object Repository/Header/div_In den Ergebnissen einfach' is present
+
+2018-02-26 12:22:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Header/div_Favoriten' is clicked on
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Header/div_Favoriten' is clicked on
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Header/div_Navigation' is clicked on
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Header/div_Navigation' is clicked on
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/div_close' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/div_close' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_Buchungsportal' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_Buchungsportal' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_Kontakt' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_Kontakt' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_Fragen  Antworten' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_Fragen  Antworten' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_So funktionierts' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_So funktionierts' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_ber uns' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:21 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_ber uns' is present
+
+2018-02-26 12:22:21 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_Impressum' is present
+
+2018-02-26 12:22:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:22 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_Impressum' is present
+
+2018-02-26 12:22:22 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/a_Datenschutz' is present
+
+2018-02-26 12:22:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:22 - [MESSAGE][PASSED] - Object 'Object Repository/Header/a_Datenschutz' is present
+
+2018-02-26 12:22:22 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Header/p_49 (0)761  217 15 300' is present
+
+2018-02-26 12:22:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:22 - [MESSAGE][PASSED] - Object 'Object Repository/Header/p_49 (0)761  217 15 300' is present
+
+2018-02-26 12:22:22 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:22:22 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Detailpage/Verify elements on detailpage" classname="Test Cases/EWS/Detailpage/Verify elements on detailpage" status="PASSED">
+         <system-out><![CDATA[2018-02-26 12:22:22 - [TEST_CASE][PASSED] - Test Cases/EWS/Detailpage/Verify elements on detailpage: Test Cases/EWS/Detailpage/Verify elements on detailpage
+
+2018-02-26 12:22:22 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:29 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/suche/'
+
+2018-02-26 12:22:29 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:29 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:29 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-02-26 12:22:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-02-26 12:22:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Detailpage/h6_Hotel Art Nouveau' is clicked on
+
+2018-02-26 12:22:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Detailpage/h6_Hotel Art Nouveau' is clicked on
+
+2018-02-26 12:22:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_ButtonClose' is present
+
+2018-02-26 12:22:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_ButtonClose' is present
+
+2018-02-26 12:22:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Victors Residenz-Hotel Be' is present
+
+2018-02-26 12:22:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Victors Residenz-Hotel Be' is present
+
+2018-02-26 12:22:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_' is present
+
+2018-02-26 12:22:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_' is present
+
+2018-02-26 12:22:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_Am Friedrichshain 17 - 10407' is present
+
+2018-02-26 12:22:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:36 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_Am Friedrichshain 17 - 10407' is present
+
+2018-02-26 12:22:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Karte anzeigen' is present
+
+2018-02-26 12:22:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Karte anzeigen' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_1113 verifizierte Bewertunge' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_1113 verifizierte Bewertunge' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_HotelHeaderImage' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_HotelHeaderImage' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/h3_Konfigurieren Sie Ihr Event' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/h3_Konfigurieren Sie Ihr Event' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Ihr Gesamtpreis' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Ihr Gesamtpreis' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Ich suche' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Ich suche' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_55940' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_55940' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_55940' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_55940' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_55940' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_55940' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Kostenbersicht' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Kostenbersicht' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Leistungsbersicht' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Leistungsbersicht' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/span_Reservieren' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/span_Reservieren' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Ihr Gesamtpreis' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Ihr Gesamtpreis' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_Jetzt reservieren spter zahl' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_Jetzt reservieren spter zahl' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_Alle  Stornobedingungen  im' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_Alle  Stornobedingungen  im' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_Expedia erhebt keine Reservi' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_Expedia erhebt keine Reservi' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Angebot per E-Mail versenden' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Angebot per E-Mail versenden' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Merken' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Merken' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Link kopieren' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Link kopieren' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/h3_Ihr Event im Detail' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/h3_Ihr Event im Detail' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Tagungsrume' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Tagungsrume' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Am Volkspark Friedrichshai' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Am Volkspark Friedrichshai' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/h3_Bildergalerie' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:37 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/h3_Bildergalerie' is present
+
+2018-02-26 12:22:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Bildergalerie' is present
+
+2018-02-26 12:22:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Bildergalerie' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/h3_Auf einen Blick' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/h3_Auf einen Blick' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Ausstattung' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Ausstattung' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Bewertungen' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Bewertungen' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Allgemeine Ausstattung' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Allgemeine Ausstattung' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Zimmerausstattung' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Zimmerausstattung' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Essen und Trinken' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Essen und Trinken' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/h3_Richtlinien' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/h3_Richtlinien' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/p_Es gelten die Allgemeinen Ge' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/p_Es gelten die Allgemeinen Ge' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_Deutsch' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_Deutsch' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_ Euro' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_ Euro' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Kontakt' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Kontakt' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Fragen  Antworten' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Fragen  Antworten' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_KontaktFragen  AntwortenSo' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_KontaktFragen  AntwortenSo' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_ber uns' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_ber uns' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Hotel eintragen' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Hotel eintragen' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/a_Impressum' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/a_Impressum' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Detailpage/div_2018 Meeting.Expedia.de -' is present
+
+2018-02-26 12:22:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:22:38 - [MESSAGE][PASSED] - Object 'Object Repository/Detailpage/div_2018 Meeting.Expedia.de -' is present
+
+2018-02-26 12:22:38 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:22:39 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/EWS/Buchen/Straight forward booking" classname="Test Cases/EWS/Buchen/Straight forward booking" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a' (Root cause: org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;drag-title&quot;> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 1336, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1b607f12-89d1-4b5b-a4d2-d253bd35fac6)"/>
+         <system-out><![CDATA[2018-02-26 12:22:39 - [TEST_CASE][FAILED] - Test Cases/EWS/Buchen/Straight forward booking: Test Cases/EWS/Buchen/Straight forward booking FAILED because (of) Unable to click on object 'Object Repository/Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a' (Root cause: org.openqa.selenium.ElementNotInteractableException: Element <span class="drag-title"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 1336, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1b607f12-89d1-4b5b-a4d2-d253bd35fac6)
+
+2018-02-26 12:22:39 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-02-26 12:22:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-02-26 12:22:43 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:44 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:22:44 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://meetingmarket-iut.de/suche/?dest=berlin&firstday=20180217&dur=1&so=2&rc_1=1&sr_1=false&rp1_1=10&rs1_1=Block&lob=1&lng=de-DE&ccur=EUR' successfully
+
+2018-02-26 12:22:46 - [MESSAGE][PASSED] - Navigate to 'https://meetingmarket-iut.de/suche/?dest=berlin&firstday=20180217&dur=1&so=2&rc_1=1&sr_1=false&rp1_1=10&rs1_1=Block&lob=1&lng=de-DE&ccur=EUR' successfully
+
+2018-02-26 12:22:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/Page_Suchergebnisse - meetingmarket/div_hotel_img first active' is clicked on
+
+2018-02-26 12:22:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/Page_Suchergebnisse - meetingmarket/div_hotel_img first active' is clicked on
+
+2018-02-26 12:22:53 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-02-26 12:22:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-02-26 12:22:56 - [TEST_STEP][PASSED] - Statement - hotelname = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Booking/Page_Wyndham Garden Berlin Mitte in/span_Wyndham Garden Berlin Mit)): Text of object 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/span_Wyndham Garden Berlin Mit' is: 'H4 Hotel Berlin Alexanderplatz'
+
+2018-02-26 12:22:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/span_Wyndham Garden Berlin Mit' is: 'H4 Hotel Berlin Alexanderplatz'
+
+2018-02-26 12:22:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/a_Tagesbersicht' is clicked on
+
+2018-02-26 12:22:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/a_Tagesbersicht' is clicked on
+
+2018-02-26 12:22:57 - [TEST_STEP][PASSED] - Statement - totalprice = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Booking/Page_Wyndham Garden Berlin Mitte in/td_69000)): Text of object 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/td_69000' is: '690,00 €'
+
+2018-02-26 12:22:58 - [MESSAGE][PASSED] - Text of object 'Object Repository/Booking/Page_Wyndham Garden Berlin Mitte in/td_69000' is: '690,00 €'
+
+2018-02-26 12:22:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/1 und 1 webmail/span_Reservieren' is clicked on
+
+2018-02-26 12:22:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/1 und 1 webmail/span_Reservieren' is clicked on
+
+2018-02-26 12:22:59 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - Statement - getdate = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Booking/Page_Schritt 1 Checkout - Hotel Art/getdate)): Text of object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/getdate' is: '27.02.2018'
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/getdate' is: '27.02.2018'
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - setText: Text 'test@test.de' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputEmail'
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Text 'test@test.de' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputEmail'
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/a_Weiter' is clicked on
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/a_Weiter' is clicked on
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - setText: Text 'test autom' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputFirstname'
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Text 'test autom' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputFirstname'
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - setText: Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputLastname'
+
+2018-02-26 12:23:02 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputLastname'
+
+2018-02-26 12:23:02 - [TEST_STEP][PASSED] - setText: Text '123456' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputPhone'
+
+2018-02-26 12:23:03 - [MESSAGE][PASSED] - Text '123456' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/input_InputPhone'
+
+2018-02-26 12:23:03 - [TEST_STEP][PASSED] - setText: Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/textarea_InputComment'
+
+2018-02-26 12:23:03 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/textarea_InputComment'
+
+2018-02-26 12:23:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/a_Weiter_1' is clicked on
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/Page_Schritt 1 Checkout - Hotel Art/a_Weiter_1' is clicked on
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - setText: Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_InputCompany'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_InputCompany'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - setText: Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputA'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputA'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - setText: Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputA_1'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Text 'test' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputA_1'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - setText: Text '12345' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputP'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Text '12345' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputP'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - setText: Text 'Freiburg' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputC'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Text 'Freiburg' is set on object 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputC'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - sendKeys: Keys 'TAB + ' sent to object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputC'
+
+2018-02-26 12:23:05 - [MESSAGE][PASSED] - Keys 'TAB + ' sent to object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_AddressFormControlInputC'
+
+2018-02-26 12:23:05 - [TEST_STEP][PASSED] - sendKeys: Keys 'SPACE + ' sent to object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_InputTcs'
+
+2018-02-26 12:23:06 - [MESSAGE][PASSED] - Keys 'SPACE + ' sent to object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/input_InputTcs'
+
+2018-02-26 12:23:06 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-02-26 12:23:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-02-26 12:23:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/a_Reservierung jetzt abschliee' is clicked on
+
+2018-02-26 12:23:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/Page_Schritt 2 Checkout - Hotel Art/a_Reservierung jetzt abschliee' is clicked on
+
+2018-02-26 12:23:11 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:23:12 - [MESSAGE][PASSED] - Browser is closed
+
+2018-02-26 12:23:12 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://webmailer.1und1.de/'
+
+2018-02-26 12:23:17 - [MESSAGE][PASSED] - Browser is opened with url: 'https://webmailer.1und1.de/'
+
+2018-02-26 12:23:17 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:23:17 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:23:17 - [TEST_STEP][PASSED] - delay: Delayed 15 second(s)
+
+2018-02-26 12:23:32 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+2018-02-26 12:23:32 - [TEST_STEP][PASSED] - setText: Text 'testautomation@meetingmarket.de' is set on object 'Object Repository/Booking/1 und 1 webmail/input_username'
+
+2018-02-26 12:23:32 - [MESSAGE][PASSED] - Text 'testautomation@meetingmarket.de' is set on object 'Object Repository/Booking/1 und 1 webmail/input_username'
+
+2018-02-26 12:23:32 - [TEST_STEP][PASSED] - setText: Text 'TestAutoMatiSierung1984' is set on object 'Object Repository/Booking/1 und 1 webmail/input_password'
+
+2018-02-26 12:23:32 - [MESSAGE][PASSED] - Text 'TestAutoMatiSierung1984' is set on object 'Object Repository/Booking/1 und 1 webmail/input_password'
+
+2018-02-26 12:23:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/1 und 1 webmail/button_Login' is clicked on
+
+2018-02-26 12:23:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/1 und 1 webmail/button_Login' is clicked on
+
+2018-02-26 12:23:32 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-02-26 12:23:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-02-26 12:23:34 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2018-02-26 12:23:44 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-02-26 12:23:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/1 und 1 webmail/span_TESTSERVER Besttigen Sie' is clicked on
+
+2018-02-26 12:23:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/1 und 1 webmail/span_TESTSERVER Besttigen Sie' is clicked on
+
+2018-02-26 12:23:45 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Booking/1 und 1 webmail/h3_Hallo Test Autom Test' is present
+
+2018-02-26 12:23:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:23:45 - [MESSAGE][PASSED] - Object 'Object Repository/Booking/1 und 1 webmail/h3_Hallo Test Autom Test' is present
+
+2018-02-26 12:23:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/1 und 1 webmail/a_Reservierung jetzt besttigen' is clicked on
+
+2018-02-26 12:23:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/1 und 1 webmail/a_Reservierung jetzt besttigen' is clicked on
+
+2018-02-26 12:23:45 - [TEST_STEP][PASSED] - switchToWindowTitle: Switched to window with title: 'Reservierung bestätigt - meetingmarket-iut.de'
+
+2018-02-26 12:23:46 - [MESSAGE][PASSED] - Switched to window with title: 'Reservierung bestätigt - meetingmarket-iut.de'
+
+2018-02-26 12:23:46 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Booking/1 und 1 webmail/h2_Ihre Reservierung ist abges' is present
+
+2018-02-26 12:23:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-26 12:23:46 - [MESSAGE][PASSED] - Object 'Object Repository/Booking/1 und 1 webmail/h2_Ihre Reservierung ist abges' is present
+
+2018-02-26 12:23:46 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-02-26 12:23:46 - [MESSAGE][PASSED] - Browser is closed
+
+2018-02-26 12:23:46 - [TEST_STEP][PASSED] - delay: Delayed 15 second(s)
+
+2018-02-26 12:24:01 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+2018-02-26 12:24:01 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://webmailer.1und1.de/'
+
+2018-02-26 12:24:05 - [MESSAGE][PASSED] - Browser is opened with url: 'https://webmailer.1und1.de/'
+
+2018-02-26 12:24:05 - [TEST_STEP][PASSED] - setViewPortSize: Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:24:05 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1024 and height = 768
+
+2018-02-26 12:24:05 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-02-26 12:24:06 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-02-26 12:24:06 - [TEST_STEP][PASSED] - setText: Text 'testautomation@meetingmarket.de' is set on object 'Object Repository/Booking/1 und 1 webmail/input_username'
+
+2018-02-26 12:24:07 - [MESSAGE][PASSED] - Text 'testautomation@meetingmarket.de' is set on object 'Object Repository/Booking/1 und 1 webmail/input_username'
+
+2018-02-26 12:24:07 - [TEST_STEP][PASSED] - setText: Text 'TestAutoMatiSierung1984' is set on object 'Object Repository/Booking/1 und 1 webmail/input_password'
+
+2018-02-26 12:24:07 - [MESSAGE][PASSED] - Text 'TestAutoMatiSierung1984' is set on object 'Object Repository/Booking/1 und 1 webmail/input_password'
+
+2018-02-26 12:24:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Booking/1 und 1 webmail/button_Login' is clicked on
+
+2018-02-26 12:24:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Booking/1 und 1 webmail/button_Login' is clicked on
+
+2018-02-26 12:24:08 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-02-26 12:24:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-02-26 12:24:10 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2018-02-26 12:24:20 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-02-26 12:24:20 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a' (Root cause: org.openqa.selenium.ElementNotInteractableException: Element <span class="drag-title"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 1336, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1b607f12-89d1-4b5b-a4d2-d253bd35fac6)
+
+2018-02-26 12:24:20 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a' (Root cause: org.openqa.selenium.ElementNotInteractableException: Element <span class="drag-title"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 1336, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1b607f12-89d1-4b5b-a4d2-d253bd35fac6)
+[[ATTACHMENT|C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180226_122048\\1519644260050.png]]]]></system-out>
+         <system-err><![CDATA[2018-02-26 12:22:39 - [TEST_CASE][FAILED] - Test Cases/EWS/Buchen/Straight forward booking: Test Cases/EWS/Buchen/Straight forward booking FAILED because (of) Unable to click on object 'Object Repository/Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a' (Root cause: org.openqa.selenium.ElementNotInteractableException: Element <span class="drag-title"> could not be scrolled into view
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 1336, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 1b607f12-89d1-4b5b-a4d2-d253bd35fac6)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-02-26 12:20:51 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/EWS/Landingpage/Verify Searchbar FAILED because (of) Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)]]></system-out>
+      <system-err><![CDATA[2018-02-26 12:20:51 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/EWS/Landingpage/Verify Searchbar FAILED because (of) Unable to click on object 'Object Repository/Landingpage/Searchbar_LP/div_1 Raum2 Rume3 Rume1 Raum1' (Root cause: org.openqa.selenium.ElementClickInterceptedException: Element <div class="select"> is not clickable at point (327.5,533) because another element <li> obscures it
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3172, moz:profile: C:\Users\Ferdi Güllübag\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 4ba343d0-4928-4e07-ada1-1686a529b773)]]></system-err>
+   </testsuite>
+</testsuites>

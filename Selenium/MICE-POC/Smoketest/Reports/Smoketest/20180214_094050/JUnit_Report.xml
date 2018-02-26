@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoketest" time="21" tests="0" failures="2" errors="0">
+   <testsuite name="Smoketest" tests="0" failures="2" errors="0" time="21" timestamp="2018-02-14 09:40:52" hostname="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box" id="Test Suites/Smoketest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180214_094050"/>
+         <property name="logFiles" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180214_094050\\execution0.log, C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180214_094050\\IEDriverServer.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.3.0.1"/>
+         <property name="browser" value="IE 11"/>
+         <property name="hostAddress" value="192.168.2.131"/>
+         <property name="sessionId" value="36671f48-8b2a-4e23-89c9-51d0b87b1e6e"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Landingpage/Verify all Elements" classname="Test Cases/Landingpage/Verify all Elements" status="FAILED">
+         <failure type="FAILED" message="Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id(&quot;PageBody&quot;)/div[@class=&quot;container container_main&quot;]/header[@class=&quot;header-start-top&quot;]/div[@class=&quot;header header_start&quot;]/div[@class=&quot;row row_start&quot;]/div[@class=&quot;logo&quot;]})"/>
+         <system-out><![CDATA[2018-02-14 09:40:52 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify all Elements: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})
+
+2018-02-14 09:40:53 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-14 09:40:59 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-14 09:40:59 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-14 09:41:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-14 09:41:04 - [TEST_STEP][FAILED] - waitForElementPresent: Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})
+
+2018-02-14 09:41:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-14 09:41:04 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-02-14 09:41:04 - [MESSAGE][FAILED] - Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})]]></system-out>
+         <system-err><![CDATA[2018-02-14 09:40:52 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify all Elements: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Landingpage/Verify Searchbar" classname="Test Cases/Landingpage/Verify Searchbar" status="FAILED">
+         <failure type="FAILED" message="Unable to verify object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2144/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 36671f48-8b2a-4e23-89c9-51d0b87b1e6e
+*** Element info: {Using=xpath, value=//span[(text() = 'Stadt wählen' or . = 'Stadt wählen')]})"/>
+         <system-out><![CDATA[2018-02-14 09:41:04 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify Searchbar: Test Cases/Landingpage/Verify Searchbar FAILED because (of) Unable to verify object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2144/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 36671f48-8b2a-4e23-89c9-51d0b87b1e6e
+*** Element info: {Using=xpath, value=//span[(text() = 'Stadt wählen' or . = 'Stadt wählen')]})
+
+2018-02-14 09:41:04 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-14 09:41:04 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-02-14 09:41:07 - [MESSAGE][PASSED] - Browser is opened with url: 'https://meetingmarket-iut.de/'
+
+2018-02-14 09:41:07 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-02-14 09:41:12 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-02-14 09:41:12 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2144/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 36671f48-8b2a-4e23-89c9-51d0b87b1e6e
+*** Element info: {Using=xpath, value=//span[(text() = 'Stadt wählen' or . = 'Stadt wählen')]})
+
+2018-02-14 09:41:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-02-14 09:41:12 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2018-02-14 09:41:12 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2144/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 36671f48-8b2a-4e23-89c9-51d0b87b1e6e
+*** Element info: {Using=xpath, value=//span[(text() = 'Stadt wählen' or . = 'Stadt wählen')]})]]></system-out>
+         <system-err><![CDATA[2018-02-14 09:41:04 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify Searchbar: Test Cases/Landingpage/Verify Searchbar FAILED because (of) Unable to verify object 'Object Repository/Landingpage/Searchbar_LP/span_Stadt whlen' is present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:2144/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 36671f48-8b2a-4e23-89c9-51d0b87b1e6e
+*** Element info: {Using=xpath, value=//span[(text() = 'Stadt wählen' or . = 'Stadt wählen')]})]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-02-14 09:40:52 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})]]></system-out>
+      <system-err><![CDATA[2018-02-14 09:40:52 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to wait for object 'Object Repository/Landingpage/Page_Tagungshotels und Meetingrume/div_logo' to be present (Root cause: org.openqa.selenium.NoSuchWindowException: Unable to find elements on closed window
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'LAPTOP-MH8HMEMT', ip: '192.168.2.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CInternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:28623/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: 370a66a9-e1f5-472e-b844-d57c6f9004d6
+*** Element info: {Using=xpath, value=id("PageBody")/div[@class="container container_main"]/header[@class="header-start-top"]/div[@class="header header_start"]/div[@class="row row_start"]/div[@class="logo"]})]]></system-err>
+   </testsuite>
+</testsuites>

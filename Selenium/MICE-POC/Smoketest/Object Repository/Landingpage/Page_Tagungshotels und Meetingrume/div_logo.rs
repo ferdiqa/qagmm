@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_logo</name>
+   <tag></tag>
+   <elementGuidId>e180895b-535c-456e-9a7e-63a7396444ff</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>logo</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PageBody&quot;)/div[@class=&quot;container container_main&quot;]/header[@class=&quot;header-start-top&quot;]/div[@class=&quot;header header_start&quot;]/div[@class=&quot;row row_start&quot;]/div[@class=&quot;logo&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

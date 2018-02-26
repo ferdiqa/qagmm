@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_logos</name>
+   <tag></tag>
+   <elementGuidId>1cf7aa29-e9fc-4c7f-b362-9be87fd694dd</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>logos</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PageBody&quot;)/div[@class=&quot;container container_main&quot;]/div[@class=&quot;content&quot;]/footer[@class=&quot;footer&quot;]/div[@class=&quot;wrapper&quot;]/div[@class=&quot;col left middle&quot;]/p[1]/span[@class=&quot;logos&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

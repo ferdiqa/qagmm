@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_meetingroom-venue-image</name>
+   <tag></tag>
+   <elementGuidId>5b4a92af-6c1b-4660-a205-f7ff070b7d1a</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>meetingroom-venue-image</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/section[@class=&quot;mice-container-main&quot;]/div[@class=&quot;mice-container&quot;]/div[@class=&quot;pages&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;container-fluid shadow mt-3 pt-4 pb-2 results&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;main container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;pl-5 pr-5 col-12&quot;]/div[@class=&quot;card mb-2&quot;]/div[@class=&quot;card-body&quot;]/a[1]/div[@class=&quot;row m-0 align-items-center&quot;]/div[@class=&quot;px-0 col-lg-3&quot;]/div[@class=&quot;meetingroom-venue-image&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoketest,Firefox 58.0,,2018-02-13 15:48:04,2018-02-13 15:48:41,"36,428s",FAILED
+,,,,,,
+Test Cases/Landingpage/Verify all Elements,Firefox 58.0,,2018-02-13 15:48:05,2018-02-13 15:48:40,"35,585s",FAILED
+openBrowser,Firefox 58.0,,2018-02-13 15:48:05,2018-02-13 15:48:10,"4,571s",PASSED
+verifyElementPresent,Firefox 58.0,,2018-02-13 15:48:10,2018-02-13 15:48:40,"30,547s",FAILED

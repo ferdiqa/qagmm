@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoketest" time="2" tests="0" failures="3" errors="0">
+   <testsuite name="Smoketest" tests="0" failures="3" errors="0" time="2" timestamp="2018-02-16 14:30:21" hostname="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box" id="Test Suites/Smoketest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180216_143019"/>
+         <property name="logFiles" value="C:\\Katalon\\MICE-POC\\Smoketest\\Reports\\Smoketest\\20180216_143019\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Ferdi G\uFFFDll\uFFFDbag - LAPTOP-MH8HMEMT.fritz.box"/>
+         <property name="hostAddress" value="192.168.2.131"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.3.0.1"/>
+      </properties>
+      <testcase name="Test Cases/Landingpage/Verify all Elements" classname="Test Cases/Landingpage/Verify all Elements" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)"/>
+         <system-out><![CDATA[2018-02-16 14:30:21 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify all Elements: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:22 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:22 - [MESSAGE][FAILED] - Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-out>
+         <system-err><![CDATA[2018-02-16 14:30:21 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify all Elements: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Landingpage/Verify Searchbar" classname="Test Cases/Landingpage/Verify Searchbar" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)"/>
+         <system-out><![CDATA[2018-02-16 14:30:22 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify Searchbar: Test Cases/Landingpage/Verify Searchbar FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:23 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:23 - [MESSAGE][FAILED] - Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-out>
+         <system-err><![CDATA[2018-02-16 14:30:22 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Verify Searchbar: Test Cases/Landingpage/Verify Searchbar FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Landingpage/Start search from LP" classname="Test Cases/Landingpage/Start search from LP" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)"/>
+         <system-out><![CDATA[2018-02-16 14:30:23 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Start search from LP: Test Cases/Landingpage/Start search from LP FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:23 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)
+
+2018-02-16 14:30:23 - [MESSAGE][FAILED] - Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-out>
+         <system-err><![CDATA[2018-02-16 14:30:23 - [TEST_CASE][FAILED] - Test Cases/Landingpage/Start search from LP: Test Cases/Landingpage/Start search from LP FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-02-16 14:30:21 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-out>
+      <system-err><![CDATA[2018-02-16 14:30:21 - [TEST_SUITE][FAILED] - Smoketest: Test Cases/Landingpage/Verify all Elements FAILED because (of) Unable to open browser with url: 'https://meetingmarket-iut.de/' (Root cause: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Ferdi G�ll�bag\Downloads\Katalon_Studio_Windows_64-5.3.0\Katalon_Studio_Windows_64-5.3.0\configuration\resources\drivers\firefox_win64\geckodriver.exe)]]></system-err>
+   </testsuite>
+</testsuites>

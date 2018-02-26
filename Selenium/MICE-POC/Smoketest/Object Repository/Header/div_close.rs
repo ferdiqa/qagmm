@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_close</name>
+   <tag></tag>
+   <elementGuidId>747228e8-ff03-4c58-befb-4a91558764df</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>close</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PageBody&quot;)/header[1]/div[@class=&quot;header&quot;]/div[@class=&quot;nav_wr&quot;]/div[@class=&quot;navi&quot;]/div[@class=&quot;nav_open open&quot;]/div[@class=&quot;close&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

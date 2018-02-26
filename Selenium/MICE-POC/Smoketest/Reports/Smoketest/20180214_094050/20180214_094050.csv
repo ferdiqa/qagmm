@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoketest,IE 11,,2018-02-14 09:40:52,2018-02-14 09:41:13,"21,216s",FAILED
+,,,,,,
+Test Cases/Landingpage/Verify all Elements,IE 11,,2018-02-14 09:40:52,2018-02-14 09:41:04,"11,524s",FAILED
+openBrowser,IE 11,,2018-02-14 09:40:53,2018-02-14 09:40:59,"6,008s",PASSED
+delay,IE 11,,2018-02-14 09:40:59,2018-02-14 09:41:04,"5,046s",PASSED
+waitForElementPresent,IE 11,,2018-02-14 09:41:04,2018-02-14 09:41:04,"0,086s",FAILED
+,,,,,,
+Test Cases/Landingpage/Verify Searchbar,IE 11,,2018-02-14 09:41:04,2018-02-14 09:41:12,"8,627s",FAILED
+openBrowser,IE 11,,2018-02-14 09:41:04,2018-02-14 09:41:07,"3,236s",PASSED
+delay,IE 11,,2018-02-14 09:41:07,2018-02-14 09:41:12,"5,002s",PASSED
+verifyElementPresent,IE 11,,2018-02-14 09:41:12,2018-02-14 09:41:12,"0,063s",FAILED

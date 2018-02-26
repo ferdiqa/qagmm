@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_55940</name>
+   <tag></tag>
+   <elementGuidId>523d2919-93da-4c1d-a5fd-d11fedb816ff</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;ContainerInfoReserve&quot;)/div[@class=&quot;cont_body&quot;][count(. | //div[(contains(text(), 'Der durchgestrichene Preis entspricht dem Standardpreis für dieses Angebot.') or contains(., 'Der durchgestrichene Preis entspricht dem Standardpreis für dieses Angebot.'))]) = count(//div[(contains(text(), 'Der durchgestrichene Preis entspricht dem Standardpreis für dieses Angebot.') or contains(., 'Der durchgestrichene Preis entspricht dem Standardpreis für dieses Angebot.'))])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cont_body</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Der durchgestrichene Preis entspricht dem Standardpreis für dieses Angebot.</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ContainerInfoReserve&quot;)/div[@class=&quot;cont_body&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

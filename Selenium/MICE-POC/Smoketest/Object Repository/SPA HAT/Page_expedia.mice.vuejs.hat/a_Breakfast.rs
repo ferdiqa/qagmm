@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Breakfast</name>
+   <tag></tag>
+   <elementGuidId>1e525283-1f19-4c7c-91da-975883d2493c</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/hotelsettings/4717/cateringoverview/breakfast</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>hover-shadow block full-size align-items pt-4 pb-4</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Breakfast</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/section[@class=&quot;mice-container-main&quot;]/div[@class=&quot;mice-container&quot;]/div[@class=&quot;pages&quot;]/div[2]/div[1]/div[1]/div[@class=&quot;container-fluid shadow mt-3 pt-4 pb-4 results&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;main container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col&quot;]/div[1]/div[@class=&quot;container-fluid results&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;main container&quot;]/div[@class=&quot;card mb-2&quot;]/div[@class=&quot;card-body&quot;]/div[@class=&quot;row m-0 px-2 align-items-center&quot;]/div[@class=&quot;col-10&quot;]/a[@class=&quot;hover-shadow block full-size align-items pt-4 pb-4&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

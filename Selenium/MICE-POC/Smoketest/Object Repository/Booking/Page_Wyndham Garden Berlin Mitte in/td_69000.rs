@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_69000</name>
+   <tag></tag>
+   <elementGuidId>7cd07d3f-dec2-4445-935b-eabeae316b16</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;SectionChart&quot;)/div[@class=&quot;block block_costs_overlook chartX&quot;]/div[@class=&quot;block_inner&quot;]/div[@class=&quot;costs_overview_wrapper&quot;]/div[@class=&quot;chart costs_overview_container day1&quot;]/section[@class=&quot;proposal_all&quot;]/div[@class=&quot;day day1&quot;]/div[@class=&quot;total&quot;]/div[@class=&quot;prop_total noPageBreak&quot;]/table[1]/tbody[1]/tr[@class=&quot;table_footer&quot;]/td[@class=&quot;norm&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>norm</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        690,00 €
+                    </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;SectionChart&quot;)/div[@class=&quot;block block_costs_overlook chartX&quot;]/div[@class=&quot;block_inner&quot;]/div[@class=&quot;costs_overview_wrapper&quot;]/div[@class=&quot;chart costs_overview_container day1&quot;]/section[@class=&quot;proposal_all&quot;]/div[@class=&quot;day day1&quot;]/div[@class=&quot;total&quot;]/div[@class=&quot;prop_total noPageBreak&quot;]/table[1]/tbody[1]/tr[@class=&quot;table_footer&quot;]/td[@class=&quot;norm&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

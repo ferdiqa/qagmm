@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Smoketest,,,2018-02-16 14:30:21,2018-02-16 14:30:23,"2,166s",FAILED
+,,,,,,
+Test Cases/Landingpage/Verify all Elements,,,2018-02-16 14:30:21,2018-02-16 14:30:22,"0,936s",FAILED
+openBrowser,,,2018-02-16 14:30:22,2018-02-16 14:30:22,"0,616s",FAILED
+,,,,,,
+Test Cases/Landingpage/Verify Searchbar,,,2018-02-16 14:30:22,2018-02-16 14:30:23,"0,376s",FAILED
+openBrowser,,,2018-02-16 14:30:23,2018-02-16 14:30:23,"0,099s",FAILED
+,,,,,,
+Test Cases/Landingpage/Start search from LP,,,2018-02-16 14:30:23,2018-02-16 14:30:23,"0,400s",FAILED
+openBrowser,,,2018-02-16 14:30:23,2018-02-16 14:30:23,"0,112s",FAILED
