@@ -2332,6 +2332,10 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
         </con:property>
       </con:properties>
     </con:testCase>
+    <con:testCase id="8287ad27-0dc2-407e-8699-87ae6f44a427" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ferdi" searchProperties="true">
+      <con:settings/>
+      <con:properties/>
+    </con:testCase>
     <con:properties/>
   </con:testSuite>
   <con:properties/>
