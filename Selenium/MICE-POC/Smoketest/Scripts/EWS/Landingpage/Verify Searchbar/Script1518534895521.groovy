@@ -73,8 +73,6 @@ WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Landingpage/Searchbar_
 
 WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/Datepicker'))
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD'), 0)
-
 WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/div_Bis zu 4 Stunden1 Tag2 Tag'))
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Landingpage/Searchbar_LP/li_Bis zu 4 Stunden'), 0)

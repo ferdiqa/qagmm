@@ -29,8 +29,6 @@ WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/div_Berlin')
 
 WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/li_Frankfurt am Main'))
 
-WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/div_zurckVorFebruar2018MoDiMiD'))
-
 WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/span_Vor'))
 
 WebUiBuiltInKeywords.click(findTestObject('Landingpage/Searchbar_LP/a_1'))
