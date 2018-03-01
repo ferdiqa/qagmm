@@ -59,4 +59,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/EWS/Buchen/Straight forward booking</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>54a90ea9-d8c4-46ac-b602-56f28d82a727</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Widgets/Searchwidget/Start search</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9f25a15-592f-45bb-8227-179499be0005</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Widgets/Searchwidget/Verify all elements</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
