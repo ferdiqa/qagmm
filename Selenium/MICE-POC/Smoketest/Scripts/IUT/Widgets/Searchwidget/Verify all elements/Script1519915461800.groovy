@@ -23,6 +23,12 @@ WebUI.openBrowser('https://meetingmarket-iut.de/Widgets/configuration/default.as
 
 WebUI.setViewPortSize(1280, 768)
 
+WebUI.setText(findTestObject('Widgets/Page_Administration Agents/input_InputEmail'), 'test@medial.net')
+
+WebUI.setText(findTestObject('Widgets/Page_Administration Agents/input_InputPassword'), '123456')
+
+WebUI.click(findTestObject('Widgets/Page_Administration Agents/input_ctl03'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Widgets/Searchwidget/div_1 Raum'), 0)

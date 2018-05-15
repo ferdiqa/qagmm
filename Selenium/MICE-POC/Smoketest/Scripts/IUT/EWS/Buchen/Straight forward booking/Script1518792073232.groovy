@@ -71,9 +71,12 @@ WebUI.sendKeys(findTestObject('Booking/Page_Schritt 2 Checkout - Hotel Art/input
 
 WebUI.sendKeys(findTestObject('Booking/Page_Schritt 2 Checkout - Hotel Art/input_InputTcs'), Keys.chord(Keys.SPACE))
 
-WebUI.delay(2)
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Booking/Page_Schritt 2 Checkout - Hotel Art/a_Reservierung jetzt abschliee'))
+
+WebUI.verifyElementPresent(findTestObject('Booking/Page_Schritt 3 Checkout - Maritim H/h2_Wichtig Schlieen Sie Ihre R'), 
+    0)
 
 WebUI.closeBrowser()
 
@@ -81,15 +84,13 @@ WebUI.openBrowser('https://webmailer.1und1.de/')
 
 WebUI.setViewPortSize(1280, 768)
 
-WebUiBuiltInKeywords.delay(15)
+WebUiBuiltInKeywords.delay(30)
 
 WebUI.setText(findTestObject('Booking/1 und 1 webmail/input_username'), 'testautomation@meetingmarket.de')
 
 WebUI.setText(findTestObject('Booking/1 und 1 webmail/input_password'), 'TestAutoMatiSierung1984')
 
 WebUI.click(findTestObject('Booking/1 und 1 webmail/button_Login'))
-
-WebUiBuiltInKeywords.delay(2)
 
 WebUiBuiltInKeywords.delay(10)
 
@@ -125,9 +126,9 @@ WebUiBuiltInKeywords.delay(10)
 
 WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/span_TESTSERVER Reservierung a'))
 
-WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/span_1 Anhang'))
+not_run: WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/span_1 Anhang'))
 
-WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/a_Reservierung_MM00008934.pdf'))
+not_run: WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/a_Reservierung_MM00008934.pdf'))
 
 WebUiBuiltInKeywords.click(findTestObject('Booking/Page_11 Mail Business Testserver Ma/a_Ansicht'))
 

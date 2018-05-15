@@ -4,6 +4,22 @@
    <name>div_ber 2.500 Tagungsrume</name>
    <tag></tag>
    <elementGuidId>addd6725-9b69-4481-b3ed-f28eb8ba378d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = '
+                                Über 8.000 Tagungsräume
+                                
+                                    im direkten Preisvergleich
+                                
+                            ' or . = '
+                                Über 8.000 Tagungsräume
+                                
+                                    im direkten Preisvergleich
+                                
+                            ')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -26,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                                Über 2.500 Tagungsräume
+                                Über 8.000 Tagungsräume
                                 
                                     im direkten Preisvergleich
                                 

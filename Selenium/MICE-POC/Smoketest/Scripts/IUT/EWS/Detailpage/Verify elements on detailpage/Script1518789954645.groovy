@@ -47,7 +47,7 @@ WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/span_Ihr Ge
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_Ich suche'), 0)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_55940'), 0)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_HotelHeaderImage'), 0)
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/span_55940'), 0)
 
@@ -91,7 +91,7 @@ WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/a_Bewertung
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_Allgemeine Ausstattung'), 0)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_Zimmerausstattung'), 0)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_Zimmerausstattung'), 0, FailureHandling.OPTIONAL)
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/div_Deutsch'), 0)
 

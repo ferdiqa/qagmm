@@ -4,5 +4,6 @@
    <name>Smoketest</name>
    <tag></tag>
    <UUID>ba1ce67b-565a-42b6-b0ae-d21f0210441d</UUID>
+   <migratedVersion>5.4.0</migratedVersion>
    <pageLoadTimeout>30</pageLoadTimeout>
 </Project>

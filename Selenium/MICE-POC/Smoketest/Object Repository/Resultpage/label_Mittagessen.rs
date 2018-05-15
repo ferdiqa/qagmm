@@ -4,6 +4,12 @@
    <name>label_Mittagessen</name>
    <tag></tag>
    <elementGuidId>f02576cb-ef16-4d32-bb85-f48947f6603c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;InlineLunchCheckboxLabel&quot;]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -21,7 +27,7 @@
       <value>fo_col fo_col3</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -30,10 +36,10 @@
                                                                                                Mittagessen</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;contentWrapper&quot;)/div[@class=&quot;block block_results_tiles block_gray&quot;]/div[@class=&quot;wizard_2_form lobCongressroom func-lob-congressroom&quot;]/div[@class=&quot;open_form v3 opn&quot;]/div[@class=&quot;main_form_all&quot;]/div[@class=&quot;hotel_page_wizard&quot;]/form[1]/div[@class=&quot;border_wrap&quot;]/div[@class=&quot;wizard_step1 wizard wizard-step-one&quot;]/div[@class=&quot;formArea&quot;]/div[@class=&quot;lobSectionCongressroom room-section&quot;]/div[@class=&quot;daysContainer section-rooms-container rooms-container&quot;]/div[2]/div[@class=&quot;dayContainer&quot;]/div[3]/div[@class=&quot;wizard_step_part additives add_cat catering-container&quot;]/div[@class=&quot;catering_all display-options inline-element&quot;]/div[@class=&quot;catering_button_popup&quot;]/div[@class=&quot;f_line hide_line nolayer checkbox-container inline-element&quot;]/label[@class=&quot;fo_col fo_col3&quot;]</value>
+      <value>//*[@id=&quot;InlineLunchCheckboxLabel&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

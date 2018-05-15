@@ -24,6 +24,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://meetingmarket-iut.de/Widgets/configuration/default.aspx?widgetType=search')
 
+WebUI.setText(findTestObject('Widgets/Page_Administration Agents/input_InputEmail'), 'test@medial.net')
+
+WebUI.setText(findTestObject('Widgets/Page_Administration Agents/input_InputPassword'), '123456')
+
+WebUI.click(findTestObject('Widgets/Page_Administration Agents/input_ctl03'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Widgets/Searchwidget/div_Alle Regionen'))
 
 WebUI.click(findTestObject('Widgets/Searchwidget/li_Frankfurt am MainLindner Co'))

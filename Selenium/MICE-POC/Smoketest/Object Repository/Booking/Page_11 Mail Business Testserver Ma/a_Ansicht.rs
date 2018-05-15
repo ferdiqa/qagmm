@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html[@class=&quot;applicationcache audio canvas canvastext emoji indexeddb indexeddb-deletedatabase json unicode video cssanimations supports csstransforms3d filereader localstorage no-websqldatabase websockets no-pointerevents fix-spin&quot;]/body[@class=&quot;unselectable&quot;]/div[@class=&quot;smart-dropdown-container dropdown open file&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[1]/a[@class=&quot;io-ox-action-link&quot;][count(. | //a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')]) = count(//a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')])]</value>
+         <value>id(&quot;window-0&quot;)/div[@class=&quot;window-container-center&quot;]/div[@class=&quot;window-body classic-toolbar-visible&quot;]/div[@class=&quot;abs window-content vsplit preview-right&quot;]/div[@class=&quot;rightside mail-detail-pane selection-one&quot;]/div[@class=&quot;thread-view-control abs&quot;]/div[@class=&quot;thread-view-list scrollable abs&quot;]/div[@class=&quot;thread-view list-view&quot;]/article[@class=&quot;list-item mail-item mail-detail f6-target focusable expanded&quot;]/section[@class=&quot;attachments mail-attachment-list&quot;]/header[1]/span[@class=&quot;links&quot;]/ul[@class=&quot;list-unstyled io-ox-inline-links&quot;]/li[1]/a[@class=&quot;io-ox-action-link&quot;][count(. | //a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')]) = count(//a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')])][count(. | //a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')]) = count(//a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -94,6 +94,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;applicationcache audio canvas canvastext emoji indexeddb indexeddb-deletedatabase json unicode video cssanimations supports csstransforms3d filereader localstorage no-websqldatabase websockets no-pointerevents fix-spin&quot;]/body[@class=&quot;unselectable&quot;]/div[@class=&quot;smart-dropdown-container dropdown open file&quot;]/ul[@class=&quot;dropdown-menu&quot;]/li[1]/a[@class=&quot;io-ox-action-link&quot;]</value>
+      <value>id(&quot;window-0&quot;)/div[@class=&quot;window-container-center&quot;]/div[@class=&quot;window-body classic-toolbar-visible&quot;]/div[@class=&quot;abs window-content vsplit preview-right&quot;]/div[@class=&quot;rightside mail-detail-pane selection-one&quot;]/div[@class=&quot;thread-view-control abs&quot;]/div[@class=&quot;thread-view-list scrollable abs&quot;]/div[@class=&quot;thread-view list-view&quot;]/article[@class=&quot;list-item mail-item mail-detail f6-target focusable expanded&quot;]/section[@class=&quot;attachments mail-attachment-list&quot;]/header[1]/span[@class=&quot;links&quot;]/ul[@class=&quot;list-unstyled io-ox-inline-links&quot;]/li[1]/a[@class=&quot;io-ox-action-link&quot;][count(. | //a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')]) = count(//a[@href = '#' and (text() = 'Ansicht' or . = 'Ansicht')])]</value>
    </webElementProperties>
 </WebElementEntity>

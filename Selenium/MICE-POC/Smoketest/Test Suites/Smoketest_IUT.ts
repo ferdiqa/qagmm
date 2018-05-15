@@ -4,7 +4,7 @@
    <name>Smoketest_IUT</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-02-26T12:26:35</lastRun>
+   <lastRun>2018-04-11T10:04:47</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
