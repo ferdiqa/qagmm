@@ -25,6 +25,8 @@ WebUI.setViewPortSize(1280, 1280)
 
 WebUiBuiltInKeywords.delay(2)
 
+WebUI.click(findTestObject('global action/Page_Suchergebnisse - meetingmarket/a_Verstanden'), FailureHandling.OPTIONAL)
+
 WebUiBuiltInKeywords.click(findTestObject('Detailpage/h6_Hotel Art Nouveau'))
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Detailpage/a_ButtonClose'), 0)

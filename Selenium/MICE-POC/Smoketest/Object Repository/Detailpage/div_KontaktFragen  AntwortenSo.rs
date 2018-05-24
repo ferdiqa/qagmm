@@ -4,6 +4,28 @@
    <name>div_KontaktFragen  AntwortenSo</name>
    <tag></tag>
    <elementGuidId>5292a43c-10d1-4b3f-8a5b-3cb663a41a5d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = '
+Kontakt
+Fragen &amp; Antworten
+So funktioniert’s
+Über uns
+Hotel eintragen
+Impressum
+Datenschutz
+' or . = '
+Kontakt
+Fragen &amp; Antworten
+So funktioniert’s
+Über uns
+Hotel eintragen
+Impressum
+Datenschutz
+')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -32,6 +54,7 @@ So funktioniert’s
 Über uns
 Hotel eintragen
 Impressum
+Datenschutz
 </value>
    </webElementProperties>
    <webElementProperties>

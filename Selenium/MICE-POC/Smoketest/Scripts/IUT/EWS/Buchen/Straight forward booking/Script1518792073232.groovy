@@ -26,6 +26,10 @@ WebUI.setViewPortSize(1280, 1280)
 
 WebUI.navigateToUrl('https://meetingmarket-iut.de/suche/?dest=berlin&firstday=20180217&dur=1&so=2&rc_1=1&sr_1=false&rp1_1=10&rs1_1=Block&lob=1&lng=de-DE&ccur=EUR')
 
+WebUI.click(findTestObject('global action/Page_Suchergebnisse - meetingmarket/a_Verstanden'))
+
+WebUI.navigateToUrl('https://meetingmarket-iut.de/suche/?dest=berlin&firstday=20180217&dur=1&so=2&rc_1=1&sr_1=false&rp1_1=10&rs1_1=Block&lob=1&lng=de-DE&ccur=EUR')
+
 WebUI.click(findTestObject('Booking/Page_Suchergebnisse - meetingmarket/div_hotel_img first active'))
 
 WebUI.delay(3)
