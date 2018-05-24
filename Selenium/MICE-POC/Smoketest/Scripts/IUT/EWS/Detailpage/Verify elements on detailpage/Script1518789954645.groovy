@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUiBuiltInKeywords.openBrowser('https://meetingmarket-iut.de/suche/')
 
-WebUI.setViewPortSize(1280, 768)
+WebUI.setViewPortSize(1280, 1280)
 
 WebUiBuiltInKeywords.delay(2)
 

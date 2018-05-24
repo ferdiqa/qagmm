@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://meetingmarket-iut.de/Widgets/configuration/default.aspx?widgetType=search')
 
-WebUI.setViewPortSize(1280, 768)
+WebUI.setViewPortSize(1280, 1280)
 
 WebUI.setText(findTestObject('Widgets/Page_Administration Agents/input_InputEmail'), 'test@medial.net')
 

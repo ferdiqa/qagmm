@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.setViewPortSize(1280, 768)
+WebUI.setViewPortSize(1280, 1280)
 
 WebUI.navigateToUrl('https://meetingmarket-iut.de/suche/?dest=berlin&firstday=20180217&dur=1&so=2&rc_1=1&sr_1=false&rp1_1=10&rs1_1=Block&lob=1&lng=de-DE&ccur=EUR')
 
@@ -82,7 +82,7 @@ WebUI.closeBrowser()
 
 WebUI.openBrowser('https://webmailer.1und1.de/')
 
-WebUI.setViewPortSize(1280, 768)
+WebUI.setViewPortSize(1280, 1280)
 
 WebUiBuiltInKeywords.delay(30)
 
@@ -110,7 +110,7 @@ WebUiBuiltInKeywords.delay(15)
 
 WebUI.openBrowser('https://webmailer.1und1.de/')
 
-WebUI.setViewPortSize(1280, 768)
+WebUI.setViewPortSize(1280, 1280)
 
 WebUiBuiltInKeywords.delay(1)
 
