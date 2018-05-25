@@ -1163,6 +1163,11 @@
               <con:path xsi:nil="true"/>
               <con:description xsi:nil="true"/>
             </con:parameter>
+            <con:parameter>
+              <con:name>iwf</con:name>
+              <con:value>1</con:value>
+              <con:style>QUERY</con:style>
+            </con:parameter>
           </con:parameters>
         </con:config>
       </con:testStep>
@@ -1388,9 +1393,9 @@
       </con:testStep>
       <con:properties/>
     </con:testCase>
-    <con:testCase id="96d5f7b8-842f-4ec3-9755-f4c65fcab05b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Booking API" searchProperties="true">
+    <con:testCase id="8437a7ab-a789-4909-9382-5f8448660a5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Booking Api" searchProperties="true">
       <con:settings/>
-      <con:testStep type="httprequest" name="Search venues" id="2e7b0bdf-fa5a-42cd-9062-5b27a3072cb5">
+      <con:testStep type="httprequest" name="Search venues" id="1e0a12bd-e14c-42c9-a125-35227628a0fc">
         <con:settings/>
         <con:config method="GET" xsi:type="con:HttpRequest" id="fd380513-3cdf-46ac-96d7-acaa8a960303" name="Search venues" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:settings>
@@ -1416,7 +1421,7 @@
           <con:parameters>
             <con:parameter>
               <con:name>dest</con:name>
-              <con:value>potsdam</con:value>
+              <con:value>berlin</con:value>
               <con:style>QUERY</con:style>
               <con:default>berlin</con:default>
               <con:path xsi:nil="true"/>
@@ -1495,46 +1500,6 @@
               <con:description xsi:nil="true"/>
             </con:parameter>
             <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ade_1</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
               <con:name>lob</con:name>
               <con:value>4</con:value>
               <con:style>QUERY</con:style>
@@ -1560,17 +1525,22 @@
               <con:style>QUERY</con:style>
               <con:default>EUR</con:default>
             </con:parameter>
+            <con:parameter>
+              <con:name>iwf</con:name>
+              <con:value>1</con:value>
+              <con:style>QUERY</con:style>
+            </con:parameter>
           </con:parameters>
         </con:config>
       </con:testStep>
-      <con:testStep type="transfer" name="get venue and price" id="06b2bcfa-9548-44f9-88a8-170aee514cd9">
+      <con:testStep type="transfer" name="get venue and price" id="c8f862ba-69b8-4b7f-830e-eea40a030cc8">
         <con:settings/>
         <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
             <con:name>get venue</con:name>
             <con:sourceType>Response</con:sourceType>
             <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].MiscIDs.MeetingMarketId</con:sourcePath>
+            <con:sourcePath>.Offerlist[?(@.BookingWorkflow =='IB')][0].MiscIDs.MeetingMarketId</con:sourcePath>
             <con:targetType>venueids</con:targetType>
             <con:targetStep>Book via Booking API</con:targetStep>
             <con:type>JSONPATH</con:type>
@@ -1580,7 +1550,7 @@
             <con:name>get price</con:name>
             <con:sourceType>Response</con:sourceType>
             <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].TotalInclVat</con:sourcePath>
+            <con:sourcePath>.Offerlist[?(@.BookingWorkflow =='IB')][0].TotalInclVat</con:sourcePath>
             <con:targetType>price</con:targetType>
             <con:targetStep>Book via Booking API</con:targetStep>
             <con:type>JSONPATH</con:type>
@@ -1588,7 +1558,7 @@
           </con:transfers>
         </con:config>
       </con:testStep>
-      <con:testStep type="httprequest" name="Book via Booking API" id="80d1c3c3-fdb7-4561-9e09-419eb4419279">
+      <con:testStep type="httprequest" name="Book via Booking API" id="b724deba-73c1-4d27-a28c-03bb80b5e88a">
         <con:settings/>
         <con:config method="GET" xsi:type="con:HttpRequest" id="38bdc2fe-a3f9-41a8-9566-052fe6fcd3be" name="Book via Booking API" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:settings>
@@ -1622,7 +1592,7 @@
           <con:parameters>
             <con:parameter>
               <con:name>venueids</con:name>
-              <con:value>5156</con:value>
+              <con:value>5409</con:value>
               <con:style>QUERY</con:style>
               <con:default>281</con:default>
               <con:path xsi:nil="true"/>
@@ -1641,14 +1611,6 @@
               <con:value>1</con:value>
               <con:style>QUERY</con:style>
               <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
               <con:path xsi:nil="true"/>
               <con:description xsi:nil="true"/>
             </con:parameter>
@@ -1709,16 +1671,8 @@
               <con:description xsi:nil="true"/>
             </con:parameter>
             <con:parameter>
-              <con:name>itc</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
               <con:name>price</con:name>
-              <con:value>858.0</con:value>
+              <con:value>1058.4</con:value>
               <con:style>QUERY</con:style>
               <con:default>590</con:default>
               <con:path xsi:nil="true"/>
@@ -1837,34 +1791,10 @@
               <con:default>4</con:default>
             </con:parameter>
             <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-            </con:parameter>
-            <con:parameter>
               <con:name>ade_1</con:name>
               <con:value>20180222</con:value>
               <con:style>QUERY</con:style>
               <con:default>20180222</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
             </con:parameter>
           </con:parameters>
         </con:config>
@@ -1879,7 +1809,7 @@
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/single/1085321/8617</con:endpoint>
+          <con:endpoint>https://meetingmarket-iut.de/rest/mule/export/booking/single/1085321/8617</con:endpoint>
           <con:request/>
           <con:assertion type="JsonPath Count" id="05c3ffaa-0bde-4a01-ba0f-71e780447ac7" name="JsonPath Count">
             <con:configuration>
@@ -1908,7 +1838,7 @@
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/2120/8369</con:endpoint>
+          <con:endpoint>https://meetingmarket-iut.de/rest/mule/export/booking/single/2120/8369</con:endpoint>
           <con:request/>
           <con:assertion type="Valid HTTP Status Codes" id="bc898ec7-9483-4a4e-a846-08133730abf4" name="Valid HTTP Status Codes">
             <con:configuration>
@@ -1965,7 +1895,7 @@
     </con:testCase>
     <con:testCase id="3cdd0e86-b1fd-4d0f-873d-1c5cedb4661f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Booking Push" searchProperties="true">
       <con:settings/>
-      <con:testStep type="httprequest" name="Search venues" id="4c0ed96f-e8a7-4b92-8770-f2b9f5e47e3d">
+      <con:testStep type="httprequest" name="Search venues" id="0a17cdd0-cf5c-4bdb-9313-623306040551">
         <con:settings/>
         <con:config method="GET" xsi:type="con:HttpRequest" id="fd380513-3cdf-46ac-96d7-acaa8a960303" name="Search venues" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:settings>
@@ -2070,46 +2000,6 @@
               <con:description xsi:nil="true"/>
             </con:parameter>
             <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ade_1</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
               <con:name>lob</con:name>
               <con:value>4</con:value>
               <con:style>QUERY</con:style>
@@ -2135,17 +2025,22 @@
               <con:style>QUERY</con:style>
               <con:default>EUR</con:default>
             </con:parameter>
+            <con:parameter>
+              <con:name>iwf</con:name>
+              <con:value>1</con:value>
+              <con:style>QUERY</con:style>
+            </con:parameter>
           </con:parameters>
         </con:config>
       </con:testStep>
-      <con:testStep type="transfer" name="get venue and price" id="8b0012c0-ec26-4d33-b0d9-d474089f1176">
+      <con:testStep type="transfer" name="get venue and price" id="1aa80b4d-702b-4fce-96bd-1e09051eb142">
         <con:settings/>
         <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
             <con:name>get venue</con:name>
             <con:sourceType>Response</con:sourceType>
             <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].MiscIDs.MeetingMarketId</con:sourcePath>
+            <con:sourcePath>.Offerlist[?(@.BookingWorkflow =='IB')][0].MiscIDs.MeetingMarketId</con:sourcePath>
             <con:targetType>venueids</con:targetType>
             <con:targetStep>Book via Booking API</con:targetStep>
             <con:type>JSONPATH</con:type>
@@ -2155,7 +2050,7 @@
             <con:name>get price</con:name>
             <con:sourceType>Response</con:sourceType>
             <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].TotalInclVat</con:sourcePath>
+            <con:sourcePath>.Offerlist[?(@.BookingWorkflow =='IB')][0].TotalInclVat</con:sourcePath>
             <con:targetType>price</con:targetType>
             <con:targetStep>Book via Booking API</con:targetStep>
             <con:type>JSONPATH</con:type>
@@ -2163,7 +2058,7 @@
           </con:transfers>
         </con:config>
       </con:testStep>
-      <con:testStep type="httprequest" name="Book via Booking API" id="f194cb28-8691-459b-a311-b4af0d5f58a2">
+      <con:testStep type="httprequest" name="Book via Booking API" id="1c1a6d01-fbdd-4d76-9a53-b7e7c92c2bb4">
         <con:settings/>
         <con:config method="GET" xsi:type="con:HttpRequest" id="38bdc2fe-a3f9-41a8-9566-052fe6fcd3be" name="Book via Booking API" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:settings>
@@ -2197,7 +2092,7 @@
           <con:parameters>
             <con:parameter>
               <con:name>venueids</con:name>
-              <con:value>4224</con:value>
+              <con:value>5409</con:value>
               <con:style>QUERY</con:style>
               <con:default>281</con:default>
               <con:path xsi:nil="true"/>
@@ -2216,14 +2111,6 @@
               <con:value>1</con:value>
               <con:style>QUERY</con:style>
               <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
               <con:path xsi:nil="true"/>
               <con:description xsi:nil="true"/>
             </con:parameter>
@@ -2284,16 +2171,8 @@
               <con:description xsi:nil="true"/>
             </con:parameter>
             <con:parameter>
-              <con:name>itc</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
               <con:name>price</con:name>
-              <con:value>908.0</con:value>
+              <con:value>1226.4</con:value>
               <con:style>QUERY</con:style>
               <con:default>590</con:default>
               <con:path xsi:nil="true"/>
@@ -2412,34 +2291,10 @@
               <con:default>4</con:default>
             </con:parameter>
             <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-            </con:parameter>
-            <con:parameter>
               <con:name>ade_1</con:name>
               <con:value>20180222</con:value>
               <con:style>QUERY</con:style>
               <con:default>20180222</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
             </con:parameter>
           </con:parameters>
         </con:config>
@@ -2450,7 +2305,7 @@
           <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
             <con:name>get Booking ID</con:name>
             <con:sourceType>Response</con:sourceType>
-            <con:sourceStep>Book via Booking API</con:sourceStep>
+            <con:sourceStep xsi:nil="true"/>
             <con:sourcePath>.BookingId[0]</con:sourcePath>
             <con:targetType>endpoint</con:targetType>
             <con:targetStep>#TestCase#</con:targetStep>
@@ -2498,7 +2353,7 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9322</con:endpoint>
+          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:endpoint>
           <con:request>523890</con:request>
           <con:assertion type="Valid HTTP Status Codes" id="44c3106b-f3d7-449f-a83f-803c9ce5e747" name="Valid HTTP Status Codes">
             <con:configuration>
@@ -2524,7 +2379,7 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9322</con:endpoint>
+          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:endpoint>
           <con:request>523890</con:request>
           <con:assertion type="Valid HTTP Status Codes" id="44c3106b-f3d7-449f-a83f-803c9ce5e747" name="Valid HTTP Status Codes">
             <con:configuration>
@@ -2548,895 +2403,9 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
       <con:properties>
         <con:property>
           <con:name>endpoint</con:name>
-          <con:value>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9322</con:value>
+          <con:value>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:value>
         </con:property>
       </con:properties>
-    </con:testCase>
-    <con:testCase id="8437a7ab-a789-4909-9382-5f8448660a5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of Booking API" searchProperties="true">
-      <con:settings/>
-      <con:testStep type="httprequest" name="Search venues" id="1e0a12bd-e14c-42c9-a125-35227628a0fc">
-        <con:settings/>
-        <con:config method="GET" xsi:type="con:HttpRequest" id="fd380513-3cdf-46ac-96d7-acaa8a960303" name="Search venues" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-          </con:settings>
-          <con:endpoint>https://meetingmarket-iut.de/rest/AriApi/v2/collection</con:endpoint>
-          <con:request/>
-          <con:assertion type="Valid HTTP Status Codes" id="dd2a4083-e725-4888-b5e0-9bea92823b72" name="Valid HTTP Status Codes">
-            <con:configuration>
-              <codes>200</codes>
-            </con:configuration>
-          </con:assertion>
-          <con:credentials>
-            <con:username>miceaccess</con:username>
-            <con:password>kl7P4vBC21xYW9</con:password>
-            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
-            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-            <con:preemptive>false</con:preemptive>
-            <con:authType>Global HTTP Settings</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:jmsPropertyConfig/>
-          <con:parameters>
-            <con:parameter>
-              <con:name>dest</con:name>
-              <con:value>leipzig</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>berlin</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>firstday</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dur</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rc_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>sr_1</con:name>
-              <con:value>false</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>false</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rp1_1</con:name>
-              <con:value>10</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>10</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rs1_1</con:name>
-              <con:value>Block</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Block</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>re1_1</con:name>
-              <con:value>Laptop</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Laptop</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cdi_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cho_1</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lob</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lng</con:name>
-              <con:value>de-DE</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>de-DE</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccur</con:name>
-              <con:value>EUR</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>EUR</con:default>
-            </con:parameter>
-          </con:parameters>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="transfer" name="get venue and price" id="c8f862ba-69b8-4b7f-830e-eea40a030cc8">
-        <con:settings/>
-        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-            <con:name>get venue</con:name>
-            <con:sourceType>Response</con:sourceType>
-            <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].MiscIDs.MeetingMarketId</con:sourcePath>
-            <con:targetType>venueids</con:targetType>
-            <con:targetStep>Book via Booking API</con:targetStep>
-            <con:type>JSONPATH</con:type>
-            <con:upgraded>true</con:upgraded>
-          </con:transfers>
-          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-            <con:name>get price</con:name>
-            <con:sourceType>Response</con:sourceType>
-            <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].TotalInclVat</con:sourcePath>
-            <con:targetType>price</con:targetType>
-            <con:targetStep>Book via Booking API</con:targetStep>
-            <con:type>JSONPATH</con:type>
-            <con:upgraded>true</con:upgraded>
-          </con:transfers>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="httprequest" name="Book via Booking API" id="b724deba-73c1-4d27-a28c-03bb80b5e88a">
-        <con:settings/>
-        <con:config method="GET" xsi:type="con:HttpRequest" id="38bdc2fe-a3f9-41a8-9566-052fe6fcd3be" name="Book via Booking API" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-          </con:settings>
-          <con:endpoint>https://meetingmarket-iut.de/rest/BookingApi/place/single</con:endpoint>
-          <con:request/>
-          <con:assertion type="JsonPath Match" id="d6cd8a0a-a0bc-48bd-8e06-4cda287f18b3" name="JsonPath Match">
-            <con:configuration>
-              <path>.Message</path>
-              <content>[Booking submission successful]</content>
-              <allowWildcards>false</allowWildcards>
-              <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-              <ignoreComments>false</ignoreComments>
-            </con:configuration>
-          </con:assertion>
-          <con:assertion type="Valid HTTP Status Codes" id="8085541b-4e82-4e90-a538-caa8c39170b3" name="Valid HTTP Status Codes">
-            <con:configuration>
-              <codes>200</codes>
-            </con:configuration>
-          </con:assertion>
-          <con:credentials>
-            <con:username>miceaccess</con:username>
-            <con:password>kl7P4vBC21xYW9</con:password>
-            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
-            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-            <con:authType>Global HTTP Settings</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:jmsPropertyConfig/>
-          <con:parameters>
-            <con:parameter>
-              <con:name>venueids</con:name>
-              <con:value>4717</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>281</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>firstday</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dur</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rc_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>sr_1</con:name>
-              <con:value>false</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>false</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rp1_1</con:name>
-              <con:value>10</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>10</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rs1_1</con:name>
-              <con:value>Block</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Block</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lob</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lng</con:name>
-              <con:value>de-DE</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>de-DE</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccur</con:name>
-              <con:value>EUR</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>EUR</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>itc</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>price</con:name>
-              <con:value>946.0</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>590</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cem</con:name>
-              <con:value>mail@muster.de</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>mail@muster.de</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cgm</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cfn</con:name>
-              <con:value>Hänschen</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Hänschen</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cln</con:name>
-              <con:value>Kläöüinß</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Kläöüinß</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cph</con:name>
-              <con:value>123456789</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>123456789</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccn</con:name>
-              <con:value>MüsterFürma</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>MüsterFürma</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccs</con:name>
-              <con:value>ÖÄÜßöäü</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>ÖÄÜßöäü</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>csn</con:name>
-              <con:value>45</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>45</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cpc</con:name>
-              <con:value>54321</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>54321</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cci</con:name>
-              <con:value>TÄÖÜßT</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>TÄÖÜßT</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ico</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dest</con:name>
-              <con:value>berlin</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>berlin</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>re1_1</con:name>
-              <con:value>Laptop</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Laptop</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cdi_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cho_1</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ade_1</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-          </con:parameters>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
-    </con:testCase>
-    <con:testCase id="e6ec848d-425e-41c5-b40f-a052ca5d53c1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of Copy of Booking API" searchProperties="true">
-      <con:settings/>
-      <con:testStep type="httprequest" name="Search venues" id="5a2af38e-e393-4985-9dce-d37be38ad7b5">
-        <con:settings/>
-        <con:config method="GET" xsi:type="con:HttpRequest" id="fd380513-3cdf-46ac-96d7-acaa8a960303" name="Search venues" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-          </con:settings>
-          <con:endpoint>http://mexpedia.compare.meetingmarket-iut.de/rest/AriApi/v2/collection</con:endpoint>
-          <con:request/>
-          <con:assertion type="Valid HTTP Status Codes" id="dd2a4083-e725-4888-b5e0-9bea92823b72" name="Valid HTTP Status Codes">
-            <con:configuration>
-              <codes>200</codes>
-            </con:configuration>
-          </con:assertion>
-          <con:credentials>
-            <con:username>miceaccess</con:username>
-            <con:password>kl7P4vBC21xYW9</con:password>
-            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
-            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-            <con:preemptive>false</con:preemptive>
-            <con:authType>Global HTTP Settings</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:jmsPropertyConfig/>
-          <con:parameters>
-            <con:parameter>
-              <con:name>dest</con:name>
-              <con:value>leipzig</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>berlin</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>firstday</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dur</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rc_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>sr_1</con:name>
-              <con:value>false</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>false</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rp1_1</con:name>
-              <con:value>10</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>10</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rs1_1</con:name>
-              <con:value>Block</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Block</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>re1_1</con:name>
-              <con:value>Laptop</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Laptop</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cdi_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cho_1</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lob</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lng</con:name>
-              <con:value>de-DE</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>de-DE</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccur</con:name>
-              <con:value>EUR</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>EUR</con:default>
-            </con:parameter>
-          </con:parameters>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="transfer" name="get venue and price" id="6f31ab17-179b-401e-abe9-7dbaca3b66a7">
-        <con:settings/>
-        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-            <con:name>get venue</con:name>
-            <con:sourceType>Response</con:sourceType>
-            <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].MiscIDs.MeetingMarketId</con:sourcePath>
-            <con:targetType>venueids</con:targetType>
-            <con:targetStep>Book via Booking API</con:targetStep>
-            <con:type>JSONPATH</con:type>
-            <con:upgraded>true</con:upgraded>
-          </con:transfers>
-          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-            <con:name>get price</con:name>
-            <con:sourceType>Response</con:sourceType>
-            <con:sourceStep>Search venues</con:sourceStep>
-            <con:sourcePath>.Offerlist[0].TotalInclVat</con:sourcePath>
-            <con:targetType>price</con:targetType>
-            <con:targetStep>Book via Booking API</con:targetStep>
-            <con:type>JSONPATH</con:type>
-            <con:upgraded>true</con:upgraded>
-          </con:transfers>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="httprequest" name="Book via Booking API" id="b62d3e14-eb70-411c-8044-9a07249182f0">
-        <con:settings/>
-        <con:config method="GET" xsi:type="con:HttpRequest" id="38bdc2fe-a3f9-41a8-9566-052fe6fcd3be" name="Book via Booking API" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-          </con:settings>
-          <con:endpoint>https://meetingmarket-iut.de/rest/BookingApi/place/single</con:endpoint>
-          <con:request/>
-          <con:assertion type="JsonPath Match" id="d6cd8a0a-a0bc-48bd-8e06-4cda287f18b3" name="JsonPath Match">
-            <con:configuration>
-              <path>.Message</path>
-              <content>[Booking submission successful]</content>
-              <allowWildcards>false</allowWildcards>
-              <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-              <ignoreComments>false</ignoreComments>
-            </con:configuration>
-          </con:assertion>
-          <con:assertion type="Valid HTTP Status Codes" id="8085541b-4e82-4e90-a538-caa8c39170b3" name="Valid HTTP Status Codes">
-            <con:configuration>
-              <codes>200</codes>
-            </con:configuration>
-          </con:assertion>
-          <con:credentials>
-            <con:username>miceaccess</con:username>
-            <con:password>kl7P4vBC21xYW9</con:password>
-            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
-            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-            <con:authType>Global HTTP Settings</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:jmsPropertyConfig/>
-          <con:parameters>
-            <con:parameter>
-              <con:name>venueids</con:name>
-              <con:value>4717</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>281</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>firstday</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dur</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>so</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rc_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>sr_1</con:name>
-              <con:value>false</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>false</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rp1_1</con:name>
-              <con:value>10</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>10</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>rs1_1</con:name>
-              <con:value>Block</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Block</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lob</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>lng</con:name>
-              <con:value>de-DE</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>de-DE</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccur</con:name>
-              <con:value>EUR</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>EUR</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>itc</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>price</con:name>
-              <con:value>946.0</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>590</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cem</con:name>
-              <con:value>mail@muster.de</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>mail@muster.de</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cgm</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cfn</con:name>
-              <con:value>Hänschen</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Hänschen</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cln</con:name>
-              <con:value>Kläöüinß</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Kläöüinß</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cph</con:name>
-              <con:value>123456789</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>123456789</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccn</con:name>
-              <con:value>MüsterFürma</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>MüsterFürma</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ccs</con:name>
-              <con:value>ÖÄÜßöäü</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>ÖÄÜßöäü</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>csn</con:name>
-              <con:value>45</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>45</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cpc</con:name>
-              <con:value>54321</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>54321</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cci</con:name>
-              <con:value>TÄÖÜßT</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>TÄÖÜßT</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ico</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-              <con:path xsi:nil="true"/>
-              <con:description xsi:nil="true"/>
-            </con:parameter>
-            <con:parameter>
-              <con:name>dest</con:name>
-              <con:value>berlin</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>berlin</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>re1_1</con:name>
-              <con:value>Laptop</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>Laptop</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cdi_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>cho_1</con:name>
-              <con:value>4</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>4</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aco</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>aar_1</con:name>
-              <con:value>20180221</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180221</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>ade_1</con:name>
-              <con:value>20180222</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>20180222</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>asi_1</con:name>
-              <con:value>2</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>2</con:default>
-            </con:parameter>
-            <con:parameter>
-              <con:name>abr_1</con:name>
-              <con:value>1</con:value>
-              <con:style>QUERY</con:style>
-              <con:default>1</con:default>
-            </con:parameter>
-          </con:parameters>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
     </con:testCase>
     <con:properties/>
   </con:testSuite>
