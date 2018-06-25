@@ -1672,7 +1672,7 @@
             </con:parameter>
             <con:parameter>
               <con:name>price</con:name>
-              <con:value>1058.4</con:value>
+              <con:value>495.0</con:value>
               <con:style>QUERY</con:style>
               <con:default>590</con:default>
               <con:path xsi:nil="true"/>
@@ -2092,7 +2092,7 @@
           <con:parameters>
             <con:parameter>
               <con:name>venueids</con:name>
-              <con:value>5409</con:value>
+              <con:value>5404</con:value>
               <con:style>QUERY</con:style>
               <con:default>281</con:default>
               <con:path xsi:nil="true"/>
@@ -2172,7 +2172,7 @@
             </con:parameter>
             <con:parameter>
               <con:name>price</con:name>
-              <con:value>1226.4</con:value>
+              <con:value>730.0</con:value>
               <con:style>QUERY</con:style>
               <con:default>590</con:default>
               <con:path xsi:nil="true"/>
@@ -2305,7 +2305,7 @@
           <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
             <con:name>get Booking ID</con:name>
             <con:sourceType>Response</con:sourceType>
-            <con:sourceStep xsi:nil="true"/>
+            <con:sourceStep>Book via Booking API</con:sourceStep>
             <con:sourcePath>.BookingId[0]</con:sourcePath>
             <con:targetType>endpoint</con:targetType>
             <con:targetStep>#TestCase#</con:targetStep>
@@ -2353,7 +2353,7 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:endpoint>
+          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9697</con:endpoint>
           <con:request>523890</con:request>
           <con:assertion type="Valid HTTP Status Codes" id="44c3106b-f3d7-449f-a83f-803c9ce5e747" name="Valid HTTP Status Codes">
             <con:configuration>
@@ -2379,7 +2379,7 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
-          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:endpoint>
+          <con:endpoint>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9697</con:endpoint>
           <con:request>523890</con:request>
           <con:assertion type="Valid HTTP Status Codes" id="44c3106b-f3d7-449f-a83f-803c9ce5e747" name="Valid HTTP Status Codes">
             <con:configuration>
@@ -2403,7 +2403,7 @@ testRunner.testCase.setPropertyValue( "endpoint", url + getTestCasePropertyValue
       <con:properties>
         <con:property>
           <con:name>endpoint</con:name>
-          <con:value>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9452</con:value>
+          <con:value>http://meetingmarket-iut.de/rest/mule/export/booking/acknowledge/9697</con:value>
         </con:property>
       </con:properties>
     </con:testCase>
